@@ -1,0 +1,11 @@
+name: apidemic
+
+services:
+  db:
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: apidemic
+      POSTGRES_PASSWORD: apidemic
+      POSTGRES_DB: apidemic
+    ports:
+      - "5432:5432"

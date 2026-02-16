@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Apidemic
+
+![Apidemic Banner](public/assets/ascii-art.png)
+
+A powerful and intuitive API testing platform designed for modern developers.
+
+## About
+
+Apidemic is a comprehensive API testing application that streamlines your development workflow. Test, debug, and validate your APIs with ease using our clean and powerful interface.
+
+## Features
+
+- **Seamless Integrations** - Connect your favorite tools and services with just a few clicks
+- **Real-time Sync** - Keep your data synchronized across all platforms automatically
+- **Developer First** - Built with developers in mind, featuring comprehensive APIs and SDKs
+- **Enterprise Ready** - Scale confidently with enterprise-grade security and reliability
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 18+
+- npm or yarn package manager
+
+### Installation
+
+```bash
+git clone https://github.com/praveen-tek/api-demic.git
+cd api-demic
+npm install
+```
+
+### Development
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit `http://localhost:3000` in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Production Build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm run start
+```
 
-## Learn More
+## Technology Stack
 
-To learn more about Next.js, take a look at the following resources:
+- **Frontend**: Next.js, React, TypeScript
+- **Styling**: Tailwind CSS
+- **UI Components**: Custom component library
+- **HTTP Client**: Axios
+- **State Management**: React Hooks
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## API Testing Features
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Send HTTP requests (GET, POST, PUT, DELETE, PATCH)
+- Custom headers and authentication
+- Request/Response history
+- Collections and environments
+- Pre-request scripts and tests
+- Variable substitution
+- Mock server support
+- Import/Export capabilities
 
-## Deploy on Vercel
+## Documentation
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+For detailed documentation, visit our [docs](https://apidemic.dev/docs).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Contributing
+
+We welcome contributions! Please read our contributing guidelines before submitting pull requests.
+
+## License
+
+MIT License - see LICENSE file for details
+

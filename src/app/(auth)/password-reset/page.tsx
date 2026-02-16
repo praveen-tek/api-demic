@@ -8,7 +8,7 @@ import { FlutedGlass } from '@paper-design/shaders-react'
 
 export default function ForgotPassword() {
     return (
-        <section className="bg-background relative overflow-hidden flex min-h-screen grid-rows-[auto_1fr] px-4">
+        <section className="bg-background relative overflow-hidden grid min-h-screen grid-rows-[auto_1fr] px-4">
             <div className="absolute inset-0 h-full w-full">
                 <FlutedGlass size={0.7} shape="lines" angle={0} distortionShape="cascade" distortion={0.75} shift={0} blur={0.25} edges={0.5} stretch={0} image="https://workers.paper.design/file-assets/01KAA2GZFSDFEH1RRF4G8FHFFC/01KHH6A160B8KF4H4KMV1P7DXB.webp" scale={1} fit="cover" highlights={0} shadows={0.4} marginLeft={0.1} marginRight={0.1} marginTop={0.1} marginBottom={0.1} colorBack="#00000000" colorHighlight="#FFFFFF" colorShadow="#000000" className="w-full h-full" />
             </div>

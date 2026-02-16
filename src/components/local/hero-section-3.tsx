@@ -1,8 +1,8 @@
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import { HeroHeader } from './header'
-import { AudioLines, ChevronRight, MessageCircle, Mic2, Plus, Radar } from 'lucide-react'
-import { Dithering, Warp } from '@paper-design/shaders-react'
+import {  ChevronRight, MessageCircle, Plus, Radar } from 'lucide-react'
+import { Dithering } from '@paper-design/shaders-react'
 
 
 export default function HeroSection() {
@@ -23,7 +23,7 @@ export default function HeroSection() {
                                     <Button
                                         asChild
                                         className="mt-6 pr-1.5">
-                                        <Link href="#link">
+                                        <Link href="/dashboard">
                                             <span className="text-nowrap rethink-sans">Start Building</span>
                                             <ChevronRight className="opacity-50" />
                                         </Link>

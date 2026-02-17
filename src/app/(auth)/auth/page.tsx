@@ -1,17 +1,16 @@
-
+"use client"
 import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
-import { Input } from '@/components/ui/input'
-import { Label } from '@/components/ui/label'
 import Link from 'next/link'
-import { FlutedGlass } from '@paper-design/shaders-react'
+import Image from 'next/image'
 import { Logo } from '@/components/local/logo'
+import { signIn } from '@/lib/auth-client'
 
 export default function Login() {
     return (
         <section className="bg-background relative overflow-hidden grid min-h-screen grid-rows-[auto_1fr] px-4">
             <div className="absolute inset-0  h-full w-full">
-                <FlutedGlass size={0.7} shape="lines" angle={0} distortionShape="cascade" distortion={0.75} shift={0} blur={0.25} edges={0.5} stretch={0} image="https://workers.paper.design/file-assets/01KAA2GZFSDFEH1RRF4G8FHFFC/01KHH6A160B8KF4H4KMV1P7DXB.webp" scale={1} fit="cover" highlights={0} shadows={0.4} marginLeft={0.1} marginRight={0.1} marginTop={0.1} marginBottom={0.1} colorBack="#00000000" colorHighlight="#FFFFFF" colorShadow="#000000" className="w-full h-full" />
+                <Image src="/assets/auth-background.gif" alt="background image" fill className="object-cover" />
             </div>
 
             <div className="mx-auto w-full max-w-7xl border-b py-3 relative z-10">
@@ -31,58 +30,15 @@ export default function Login() {
                 <Card
                     variant="outline"
                     className="mt-6 p-8">
-                    <form
-                        action=""
-                        className="space-y-5">
-                        <div className="space-y-3">
-                            <Label
-                                htmlFor="email"
-                                className="text-sm rethink-sans">
-                                Email
-                            </Label>
-                            <Input
-                                type="email"
-                                id="email"
-                                name="email"
-                                placeholder="you@example.com"
-                                required
-                            />
-                        </div>
-
-                        <div className="space-y-3">
-                            <div className="flex items-center justify-between">
-                                <Label
-                                    htmlFor="password"
-                                    className="text-sm rethink-sans">
-                                    Password
-                                </Label>
-                                <Link
-                                    href="/password-reset"
-                                    className="text-muted-foreground hover:text-foreground text-xs rethink-sans">
-                                    Forgot password?
-                                </Link>
-                            </div>
-                            <Input
-                                type="password"
-                                id="password"
-                                name="password"
-                                required
-                            />
-                        </div>
-
-                        <Button className="w-full">Sign In</Button>
-                    </form>
-
-                    <div className="my-6 flex items-center gap-3">
-                        <hr className="flex-1" />
-                        <span className="text-muted-foreground text-xs rethink-sans">or continue with</span>
-                        <hr className="flex-1" />
-                    </div>
-
                     <div className="grid grid-cols-2 gap-3">
                         <Button
                             type="button"
-                            variant="outline">
+                            variant="outline"
+                            className="w-full"
+                            onClick={() => signIn.social({
+                                provider: 'google',
+                                callbackURL: "/"
+                            })}>
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 className="size-4"
@@ -104,7 +60,12 @@ export default function Login() {
                         </Button>
                         <Button
                             type="button"
-                            variant="outline">
+                            variant="outline"
+                            className="w-full"
+                            onClick={() => signIn.social({
+                                provider: 'github',
+                                callbackURL: "/"
+                            })}>
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 className="size-4"
@@ -115,15 +76,6 @@ export default function Login() {
                         </Button>
                     </div>
                 </Card>
-
-                <p className="text-muted-foreground mt-6 text-center text-sm rethink-sans">
-                    Don&apos;t have an account?{' '}
-                    <Link
-                        href="/sign-up"
-                        className="text-primary font-medium hover:underline">
-                        Sign up
-                    </Link>
-                </p>
             </div>
         </section>
     )

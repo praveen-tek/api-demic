@@ -1,6 +1,5 @@
-import { neon } from "@neondatabase/serverless";
-import { drizzle } from "drizzle-orm/neon-http";
+import 'dotenv/config';
+import { drizzle } from 'drizzle-orm/node-postgres';
 
-const pg = neon(process.env.DATABASE_URL!);
-const db = drizzle({ client: pg });
-export { db };
+const db = drizzle(process.env.DATABASE_URL!);
+export default db;

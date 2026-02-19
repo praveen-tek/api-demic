@@ -1,6 +1,6 @@
 # Apidemic
 
-![Apidemic Banner](public/assets/ascii-art.gif)
+![Apidemic Banner](public/assets/ascii-art.png)
 
 A powerful and intuitive API testing platform designed for modern developers.
 

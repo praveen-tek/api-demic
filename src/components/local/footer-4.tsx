@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { LogoInv } from '@/components/local/logo'
+import { LogoInv } from '@/components/ui/logo'
 
 const links = [
     { label: 'Legal', href: '/legal' },

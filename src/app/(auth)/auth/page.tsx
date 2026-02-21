@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
 import Link from 'next/link'
 import Image from 'next/image'
-import { Logo } from '@/components/local/logo'
+import { Logo } from '@/components/ui/logo'
 import { signIn } from '@/lib/auth-client'
 
 export default function Login() {

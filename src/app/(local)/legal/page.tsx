@@ -1,4 +1,4 @@
-import { LogoInv } from '@/components/local/logo'
+import { LogoInv } from '@/components/ui/logo'
 import { Card } from '@/components/ui/card'
 import Link from 'next/link'
 

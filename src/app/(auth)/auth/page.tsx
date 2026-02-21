@@ -29,7 +29,7 @@ export default function Login() {
                 </div>
                 <Card
                     variant="outline"
-                    className="mt-6 p-8">
+                    className="mt-6 p-8 bg-transparent backdrop-blur-sm">
                     <div className="grid grid-cols-2 gap-3">
                         <Button
                             type="button"

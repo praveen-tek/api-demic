@@ -3,7 +3,6 @@ import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
 import { Check, ArrowRight } from 'lucide-react'
 import { cn } from '@/lib/utils'
-import { Dithering } from '@paper-design/shaders-react'
 
 const plans = [
     {
@@ -26,11 +25,7 @@ const plans = [
 
 export default function PricingSection() {
     return (
-        <section className="@container relative overflow-hidden py-24">
-            <div className="absolute inset-0 -z-10 h-full w-full">
-                <Dithering speed={0.38} shape="warp" type="2x2" size={1.9} scale={1} colorBack="#00000000" colorFront="#7B7B7B" className="w-full h-full" />
-            </div>
-            
+        <section className="@container relative overflow-hidden py-12 pt-16">
             <div className="mx-auto max-w-2xl px-6 relative z-10">
                 <div className="text-center">
                     <h2 className="text-balance geo-regular-italic text-4xl font-medium rethink-sans">One Plan, Simple Pricing</h2>
@@ -52,9 +47,7 @@ export default function PricingSection() {
                             </div>
                             <ul className="mt-6 space-y-3">
                                 {plan.features.map((feature) => (
-                                    <li
-                                        key={feature}
-                                        className="text-muted-foreground flex items-center gap-2 text-sm rethink-sans">
+                                    <li key={feature} className="text-muted-foreground flex items-center gap-2 text-sm rethink-sans">
                                         <Check className="text-primary size-4" />
                                         {feature}
                                     </li>

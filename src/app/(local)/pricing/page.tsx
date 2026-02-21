@@ -6,9 +6,11 @@ import React from 'react'
 const Pricing = () => {
   return (
     <div>
-        <HeroHeader/>
-        <PricingSection/>
-        <Footer/>
+
+
+      <PricingSection />
+
+
     </div>
   )
 }

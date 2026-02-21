@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export default function Legal() {
     return (
-        <section className="bg-background @container relative overflow-hidden py-24">
+        <section className="@container relative overflow-hidden py-24">
             <div className="mx-auto max-w-2xl px-6">
                 <div className="mb-12">
                     <span className="text-balance geo-regular-italic text-4xl font-medium mb-4"><Link href="/home"><LogoInv /> Legal</Link></span>

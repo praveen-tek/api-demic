@@ -5,9 +5,9 @@ import HeroSection from "@/components/local/hero-section-3";
 const Home = () => {
   return (
     <div>
-      <HeroHeader/>
+
       <HeroSection/>
-      <Footer/>
+
     </div>
   )
 }

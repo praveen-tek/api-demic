@@ -8,8 +8,8 @@ import { cn } from '@/lib/utils'
 
 const menuItems = [
     { name: 'Features', href: '/features' },
-        { name: 'Pricing', href: '/pricing' },
-        { name: 'Company', href: '/company' },
+    { name: 'Pricing', href: '/pricing' },
+    { name: 'Legal', href: '/legal' },
 ]
 
 export const HeroHeader = () => {
@@ -27,7 +27,7 @@ export const HeroHeader = () => {
         <header>
             <nav
                 data-state={menuState && 'active'}
-                className={cn('fixed z-20 w-full transition-all duration-300 bg-black', isScrolled && 'bg-background/75 border-b border-black backdrop-blur-lg')}>
+                className={cn('fixed z-20 w-full transition-all duration-300 bg-black/20 backdrop-blur-md', isScrolled && 'bg-background/75 border-b border-black backdrop-blur-lg')}>
                 <div className="mx-auto max-w-5xl px-6">
                     <div className="relative flex flex-wrap items-center justify-between gap-6 py-6 lg:gap-0">
                         <div className="flex w-full justify-between gap-6 lg:w-auto">
@@ -90,7 +90,7 @@ export const HeroHeader = () => {
                                         <span>Get Started</span>
                                     </Link>
                                 </Button>
-                                
+
                                 <Button
                                     asChild
                                     size="sm"

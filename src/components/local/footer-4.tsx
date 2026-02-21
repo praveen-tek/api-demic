@@ -13,7 +13,7 @@ const links = [
 
 export default function Footer() {
     return (
-        <footer className=" @container border-t py-8 bg-black">
+        <footer className=" @container border-t py-8 bg-black/20 backdrop-blur-md z-1 sticky">
             <div className="mx-auto max-w-3xl px-6">
                 <div className="grid gap-8">
                     <div className="col-span-full border-b pb-8">

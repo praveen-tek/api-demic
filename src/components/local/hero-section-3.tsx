@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
-import { ChevronRight, MessageCircle, Plus, Radar } from 'lucide-react'
+import { BotMessageSquare, ChevronRight, MessageCircle, Plus} from 'lucide-react'
 
 export default function HeroSection() {
     return (
@@ -10,8 +10,8 @@ export default function HeroSection() {
                     <div className="relative z-10 mx-auto w-full max-w-5xl sm:pl-6">
                         <div className="flex items-center justify-between max-md:flex-col">
                             <div className="max-w-md max-sm:px-6">
-                                <h1 className="text-balance geo-regular-italic text-4xl font-medium sm:text-5xl">Ship faster. Integrate smarter.</h1>
-                                <p className="text-muted-foreground mt-4 text-balance geo-regular">Veil is your all-in-one engine for adding seamless integrations to your app.</p>
+                                <h1 className="text-balance geo-regular-italic text-4xl font-medium sm:text-5xl">Your APIs. Tested. Understood. Fixed.</h1>
+                                <p className="text-muted-foreground mt-4 text-balance geo-regular">API-demic connects your APIs to AI so you can test faster, catch bugs earlier, and understand what&apos;s actually breaking.</p>
                                 <Button asChild className="mt-6 pr-1.5">
                                     <Link href="/dashboard">
                                         <span className="text-nowrap rethink-sans">Start Building</span>
@@ -48,7 +48,7 @@ export default function HeroSection() {
                                     </div>
                                     <div className="flex items-center gap-0.5">
                                         <div className="bg-foreground text-background flex size-9 cursor-pointer rounded-0 *:m-auto *:size-4 hover:brightness-110">
-                                            <Radar />
+                                            <BotMessageSquare/>
                                         </div>
                                     </div>
                                 </div>

@@ -1,4 +1,4 @@
-import HeroSection from "@/components/local/hero-section";
+import HeroSection from "@/components/shared/heroSection";
 
 const Home = () => {
   return (

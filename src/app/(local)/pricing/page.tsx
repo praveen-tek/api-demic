@@ -1,6 +1,6 @@
-import Footer from '@/components/local/footer-4';
-import { HeroHeader } from '@/components/local/header';
-import PricingSection from '@/components/local/pricing-3';
+import Footer from '@/components/shared/footerSection';
+import { HeroHeader } from '@/components/shared/headerSection';
+import PricingSection from '@/components/shared/pricingSection';
 import React from 'react'
 
 const Pricing = () => {

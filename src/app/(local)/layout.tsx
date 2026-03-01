@@ -1,7 +1,7 @@
 'use client'
 
-import Footer from "@/components/local/footer-4";
-import { HeroHeader } from "@/components/local/header";
+import Footer from "@/components/shared/footerSection";
+import { HeroHeader } from "@/components/shared/headerSection";
 import { Dithering } from "@paper-design/shaders-react";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";

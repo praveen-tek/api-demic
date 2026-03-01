@@ -1,6 +1,6 @@
-import Features from '@/components/local/features-1';
-import Footer from '@/components/local/footer-4';
-import { HeroHeader } from '@/components/local/header';
+import Features from '@/components/shared/featureSection';
+import Footer from '@/components/shared/footerSection';
+import { HeroHeader } from '@/components/shared/headerSection';
 
 
 const FeaturesPage = () => {

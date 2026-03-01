@@ -1,5 +1,5 @@
 import { currentUser } from "@/actions/user";
-import Header from "@/components/root/header";
+import Header from "@/components/features/header";
 
 const RootLayout = async ({ children }: { children: React.ReactNode }) => {
     const user = await currentUser()

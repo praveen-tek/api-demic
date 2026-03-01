@@ -12,8 +12,6 @@ export default function MarketingLayout({
     children: React.ReactNode;
 }) {
     const pathname = usePathname();
-
-    // Define pages that should not have scrolling
     const noScrollPages = ["/home", "/features", "/pricing", "/"];
     const isNoScroll = noScrollPages.includes(pathname);
 
@@ -22,7 +20,6 @@ export default function MarketingLayout({
             "relative flex flex-col",
             isNoScroll ? "h-screen overflow-hidden" : "min-h-screen"
         )}>
-            {/* Background Shader */}
             <div className="fixed inset-0 -z-10 bg-background pointer-events-none">
                 <Dithering
                     speed={0.38}
@@ -36,10 +33,8 @@ export default function MarketingLayout({
                 />
             </div>
 
-            {/* Header */}
             <HeroHeader />
 
-            {/* Page Content */}
             <main className={cn(
                 "flex-1 flex flex-col pt-24",
                 isNoScroll ? "overflow-hidden" : "overflow-y-auto"
@@ -51,7 +46,6 @@ export default function MarketingLayout({
                     <div className="flex-1">
                         {children}
                     </div>
-                    {/* Footer */}
                     <Footer />
                 </div>
             </main>

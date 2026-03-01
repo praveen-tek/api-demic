@@ -4,6 +4,7 @@ import { UserProps } from '@/types/userProps';
 import { LogoInv } from '../ui/logo';
 import SearchBar from './search-bar';
 import UserButton from './user-button';
+import InviteMember from './invite-member';
 
 
 interface Props {
@@ -21,6 +22,7 @@ const Header = ({ user }: Props) => {
                 </div>
             </div>
             <div className='col-span-2 flex items-center justify-end space-x-2 hover:cursor-pointer hover:opacity-80'>
+                <InviteMember />
                 <UserButton user={user} size="sm" />
             </div>
         </header>

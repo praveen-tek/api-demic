@@ -15,6 +15,13 @@
       "when": 1771728130606,
       "tag": "0001_omniscient_maggott",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1773043463661,
+      "tag": "0002_eminent_ben_grimm",
+      "breakpoints": true
     }
   ]
 }

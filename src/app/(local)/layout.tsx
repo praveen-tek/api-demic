@@ -20,6 +20,7 @@ export default function MarketingLayout({
             "relative flex flex-col",
             isNoScroll ? "h-screen overflow-hidden" : "min-h-screen"
         )}>
+
             <div className="fixed inset-0 -z-10 bg-background pointer-events-none">
                 <Dithering
                     speed={0.38}

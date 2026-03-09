@@ -1,8 +1,7 @@
 "use client";
-
+import { Facehash } from "facehash";
 import { useState } from "react";
-import { User, LogOut, Settings, CreditCard, User as UserIcon } from "lucide-react";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { LogOut, Settings, CreditCard, User as UserIcon } from "lucide-react";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -56,10 +55,10 @@ export default function UserButton({
   const [isLoading, setIsLoading] = useState(false);
   const router = useRouter();
 
-   const onSignOut = async()=>{
+  const onSignOut = async () => {
     await authClient.signOut({
-      fetchOptions:{
-        onSuccess:()=>{
+      fetchOptions: {
+        onSuccess: () => {
           router.push("/sign-in")
         }
       }
@@ -67,16 +66,16 @@ export default function UserButton({
   }
 
   const handleLogout = async () => {
-  
-      setIsLoading(true);
-      try {
-        await onSignOut();
-      } catch (error) {
-        console.error("Logout error:", error);
-      } finally {
-        setIsLoading(false);
-      }
-    
+
+    setIsLoading(true);
+    try {
+      await onSignOut();
+    } catch (error) {
+      console.error("Logout error:", error);
+    } finally {
+      setIsLoading(false);
+    }
+
   };
 
   // Get user initials for avatar fallback
@@ -123,16 +122,7 @@ export default function UserButton({
           className={`relative ${avatarSizes[size]} rounded-full p-0 hover:bg-accent`}
           disabled={isLoading}
         >
-          <Avatar className={avatarSizes[size]}>
-            <AvatarImage
-              src={user.image || ""}
-              alt={user.name || "User avatar"}
-            />
-            <AvatarFallback className="bg-primary text-primary-foreground font-medium">
-              {getUserInitials(user.name, user.email)}
-            </AvatarFallback>
-          </Avatar>
-          {showBadge && (
+          <Facehash name={user.name || "User"} size={48} enableBlink className="text-foreground" />   {showBadge && (
             <Badge
               variant={badgeVariant}
               className="absolute -bottom-1 -right-1 h-5 px-1 text-xs"
@@ -142,21 +132,12 @@ export default function UserButton({
           )}
         </Button>
       </DropdownMenuTrigger>
-      
+
       <DropdownMenuContent className="w-64" align="end" forceMount>
         <DropdownMenuLabel className="font-normal">
           <div className="flex flex-col space-y-2">
             <div className="flex items-center space-x-3">
-              <Avatar className="h-12 w-12">
-                <AvatarImage
-                  src={user.image || ""}
-                  alt={user.name || "User avatar"}
-                />
-                <AvatarFallback className="bg-primary text-primary-foreground font-medium text-lg">
-                  {getUserInitials(user.name, user.email)}
-                </AvatarFallback>
-              </Avatar>
-              <div className="flex flex-col space-y-1">
+              <Facehash name={user.name || "User"} size={48} enableBlink className="text-foreground" /> <div className="flex flex-col space-y-1">
                 <p className="text-sm font-medium leading-none">
                   {user.name || "User"}
                 </p>
@@ -179,32 +160,32 @@ export default function UserButton({
             )}
           </div>
         </DropdownMenuLabel>
-        
+
         <DropdownMenuSeparator />
-        
+
         {onProfile && (
           <DropdownMenuItem onClick={onProfile} className="cursor-pointer">
             <UserIcon className="mr-2 h-4 w-4" />
             Profile
           </DropdownMenuItem>
         )}
-        
+
         {onBilling && (
           <DropdownMenuItem onClick={onBilling} className="cursor-pointer">
             <CreditCard className="mr-2 h-4 w-4" />
             Billing
           </DropdownMenuItem>
         )}
-        
+
         {onSettings && (
           <DropdownMenuItem onClick={onSettings} className="cursor-pointer">
             <Settings className="mr-2 h-4 w-4" />
             Settings
           </DropdownMenuItem>
         )}
-        
+
         <DropdownMenuSeparator />
-        
+
         <DropdownMenuItem
           onClick={handleLogout}
           disabled={isLoading}

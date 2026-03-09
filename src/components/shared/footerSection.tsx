@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { LogoInv } from '@/components/ui/logo'
+import { AniLogoInv } from '../ui/animated-logo'
 
 const links = [
     { label: 'Legal', href: '/legal' },
@@ -13,14 +14,14 @@ const links = [
 
 export default function Footer() {
     return (
-        <footer className=" @container border-t py-8 bg-black/20 backdrop-blur-md z-1 sticky">
+        <footer className=" @container border-t py-8  backdrop-blur-md z-1 sticky bg-black">
             <div className="mx-auto max-w-3xl px-6">
                 <div className="grid gap-8">
                     <div className="col-span-full border-b pb-8">
                         <Link
                             href="/"
                             className="flex items-center gap-2">
-                            <LogoInv className="h-5 w-fit" />
+                            <AniLogoInv className="h-5 w-fit" />
                         </Link>
                         <p className="text-muted-foreground mt-4 max-w-xs text-sm geo-regular-italic">Test your APIs with confidence before they reach production</p>
 

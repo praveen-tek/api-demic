@@ -1,7 +1,7 @@
 "use server";
 
 import db from "@/db";
-import { auth } from "@/lib/auth";
+import { auth } from "@/lib/better-auth/auth";
 import { headers } from "next/headers";
 import { eq } from "drizzle-orm";
 import { user } from "@/db/schema";

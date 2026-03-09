@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/button'
 import Link from 'next/link'
 import Image from 'next/image'
 import { AniLogoInv, AniLogo } from '@/components/ui/animated-logo'
-import { signIn } from '@/lib/auth-client'
+import { signIn } from '@/lib/better-auth/auth-client'
 
 export default function Login() {
     return (

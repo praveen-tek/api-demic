@@ -6,6 +6,6 @@ export default defineConfig({
   schema: "./src/db/schema.ts",
   dialect: "postgresql",
   dbCredentials: {
-    url: "postgresql://apidemic:apidemic@localhost:5432/apidemic",
+    url: process.env.DATABASE_URL!,  // env secured
   },
 });

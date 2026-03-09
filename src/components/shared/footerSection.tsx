@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import { LogoInv } from '@/components/ui/logo'
 import { AniLogoInv } from '../ui/animated-logo'
 
 const links = [

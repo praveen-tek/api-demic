@@ -1,4 +1,5 @@
 import { Card } from '@/components/ui/card'
+import { TextScramble } from '../ui/text-scramble'
 
 export default function Features() {
     return (
@@ -6,7 +7,8 @@ export default function Features() {
             <div className="mx-auto max-w-2xl px-6 relative z-10">
                 <div>
                     <h2 className="text-balance geo-regular-italic text-4xl font-medium">Powerful Features for Modern Teams</h2>
-                    <p className="text-muted-foreground mt-4 text-balance rethink-sans">Everything you need to build, connect, and scale your integrations effortlessly.</p>
+                    <TextScramble  duration={1.2}
+      characterSet='. ' className="text-muted-foreground mt-4 text-balance rethink-sans">Everything you need to build, connect, and scale your integrations effortlessly.</TextScramble>
                 </div>
                 <div className="@xl:grid-cols-2 mt-12 grid gap-3 *:p-6">
                     <Card variant="outline" className="row-span-2 grid grid-rows-subgrid overflow-hidden">

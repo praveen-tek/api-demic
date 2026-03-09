@@ -1,6 +1,24 @@
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
-import { BotMessageSquare, ChevronRight, MessageCircle, Plus} from 'lucide-react'
+import { BotMessageSquare, ChevronRight, MessageCircle, Plus } from 'lucide-react'
+import { TextLoop } from '../ui/text-loop'
+import { TextScramble } from '../ui/text-scramble'
+
+
+const TEST_CASES = [
+    'How to test Supabase auth tokens and roles?',
+    'How to validate Firebase real-time subscriptions?',
+    'How to verify Slack notification delivery?',
+    'How to test Twilio SMS verification?',
+    'How to test Linear webhook sync?',
+    'How to validate Figma design sync?',
+    'How to test Vercel env variables?',
+    'How to test Clerk sessions and permissions?',
+    'How to test Claude AI API reliability?',
+    'How to validate Stripe webhooks?',
+    'How to test multi-provider OAuth?',
+    'How to test API rate limiting?',
+]
 
 export default function HeroSection() {
     return (
@@ -11,7 +29,8 @@ export default function HeroSection() {
                         <div className="flex items-center justify-between max-md:flex-col">
                             <div className="max-w-md max-sm:px-6">
                                 <h1 className="text-balance geo-regular-italic text-4xl font-medium sm:text-5xl">Your APIs. Tested. Understood. Fixed.</h1>
-                                <p className="text-muted-foreground mt-4 text-balance geo-regular">API-demic connects your APIs to AI so you can test faster, catch bugs earlier, and understand what&apos;s actually breaking.</p>
+                                <TextScramble duration={1.2}
+                                    characterSet='. ' className="text-muted-foreground mt-4 text-balance geo-regular">API-demic connects your APIs to AI so you can test faster, catch bugs earlier, and understand what&apos;s actually breaking.</TextScramble>
                                 <Button asChild className="mt-6 pr-1.5">
                                     <Link href="/dashboard">
                                         <span className="text-nowrap rethink-sans">Start Building</span>
@@ -20,20 +39,7 @@ export default function HeroSection() {
                                 </Button>
                             </div>
                             <div aria-hidden className="mask-y-from-50% relative max-md:mx-auto max-md:*:scale-90">
-                                {[
-                                    'How to test Supabase auth tokens and roles?',
-                                    'How to validate Firebase real-time subscriptions?',
-                                    'How to verify Slack notification delivery?',
-                                    'How to test Twilio SMS verification?',
-                                    'How to test Linear webhook sync?',
-                                    'How to validate Figma design sync?',
-                                    'How to test Vercel env variables?',
-                                    'How to test Clerk sessions and permissions?',
-                                    'How to test Claude AI API reliability?',
-                                    'How to validate Stripe webhooks?',
-                                    'How to test multi-provider OAuth?',
-                                    'How to test API rate limiting?',
-                                ].map((prompt, index) => (
+                                {TEST_CASES.map((prompt, index) => (
                                     <div key={index} className="text-muted-foreground flex items-center gap-2 px-14 py-2 text-sm">
                                         <MessageCircle className="size-3.5 opacity-50" />
                                         <span className="text-nowrap rethink-sans">{prompt}</span>
@@ -44,11 +50,19 @@ export default function HeroSection() {
                                         <div className="hover:bg-muted flex size-9 cursor-pointer rounded-0 *:m-auto *:size-4">
                                             <Plus />
                                         </div>
-                                        <div className="text-muted-foreground text-sm rethink-sans">Ask anything...</div>
+                                        <TextLoop
+                                            className="text-muted-foreground text-sm rethink-sans"
+                                            interval={2.5}
+                                            transition={{ duration: 0.3 }}
+                                        >
+                                            {TEST_CASES.map((prompt, index) => (
+                                                <span key={index}>{prompt}</span>
+                                            ))}
+                                        </TextLoop>
                                     </div>
                                     <div className="flex items-center gap-0.5">
                                         <div className="bg-foreground text-background flex size-9 cursor-pointer rounded-0 *:m-auto *:size-4 hover:brightness-110">
-                                            <BotMessageSquare/>
+                                            <BotMessageSquare />
                                         </div>
                                     </div>
                                 </div>

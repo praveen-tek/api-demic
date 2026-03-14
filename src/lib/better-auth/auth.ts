@@ -2,10 +2,8 @@ import db from "@/db";
 import { betterAuth } from "better-auth";
 import { drizzleAdapter } from "better-auth/adapters/drizzle";
 import { user, account, session, verification } from "@/db/schema";
-import { organization } from "better-auth/plugins";
 
 export const auth = betterAuth({
-  plugins: [organization()],
   baseURL: process.env.BETTER_AUTH_BASE_URL || "http://localhost:3000",
   database: drizzleAdapter(db, {
     provider: "pg",
@@ -19,7 +17,8 @@ export const auth = betterAuth({
 
   socialProviders: {
     google: {
-      prompt: "select_account",
+      accessType: "offline",
+      prompt: "select_account consent",
       clientId: process.env.GOOGLE_CLIENT_ID as string,
       clientSecret: process.env.GOOGLE_CLIENT_SECRET as string,
     },

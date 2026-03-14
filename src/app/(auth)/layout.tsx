@@ -4,13 +4,13 @@ import { redirect } from 'next/navigation'
 import React from 'react'
 
 const AuthLayout = async({children}: {children: React.ReactNode}) => {
-    const session = await auth.api.getSession({
-        headers:await headers()
-    })
+    // const session = await auth.api.getSession({
+    //     headers:await headers()
+    // })
 
-    if(session){
-        return redirect("/dashboard")
-    }
+    // if(session){
+    //     return redirect("/dashboard")
+    // }
 
   return (
     <div>{children}</div>

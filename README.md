@@ -68,6 +68,10 @@ npm run start
 
 For detailed documentation, visit our [docs](https://apidemic.dev/docs).
 
+## Design
+
+Check out the [Figma Design](https://www.figma.com/design/tGvXUgUCwdEDcgTVgbA6fO/api-demic?node-id=0-1&t=Ozst4o0DOqOwtxnb-1).
+
 ## Contributing
 
 We welcome contributions! Please read our contributing guidelines before submitting pull requests.

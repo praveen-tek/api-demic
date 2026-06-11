@@ -1,82 +1,20 @@
-# Apidemic
+# apidemic
+![banner](README-banner.png)
+`Automated agentic API testing platform.`
 
-![Apidemic Banner](public/assets/ascii-art.png)
-
-A powerful and intuitive API testing platform designed for modern developers.
 
 ## About
+apidemic is a tool built to automate the process of testing APIs using agentic workflows. Instead of manually writing test cases or configuring static test suites, apidemic uses an agent-driven approach to explore, validate, and stress API endpoints intelligently.
 
-Apidemic is a comprehensive API testing application that streamlines your development workflow. Test, debug, and validate your APIs with ease using our clean and powerful interface.
+## Goal
+Eliminate the manual overhead of API testing by letting an autonomous agent handle endpoint discovery, request generation, edge case detection, and failure reporting.
 
 ## Features
+- [ ] Agentic test execution ~ agent drives the testing flow without manual test case definition
+- [ ] Automated endpoint coverage across REST APIs
+- [ ] Edge case and failure mode detection
+- [ ] Structured test reporting with actionable output
+- [ ] Designed for developer and CI/CD pipeline integration
 
-- **Seamless Integrations** - Connect your favorite tools and services with just a few clicks
-- **Real-time Sync** - Keep your data synchronized across all platforms automatically
-- **Developer First** - Built with developers in mind, featuring comprehensive APIs and SDKs
-- **Enterprise Ready** - Scale confidently with enterprise-grade security and reliability
-
-## Getting Started
-
-### Prerequisites
-
-- Node.js 18+
-- npm or yarn package manager
-
-### Installation
-
-```bash
-git clone https://github.com/praveen-tek/api-demic.git
-cd api-demic
-npm install
-```
-
-### Development
-
-```bash
-npm run dev
-```
-
-Visit `http://localhost:3000` in your browser.
-
-### Production Build
-
-```bash
-npm run build
-npm run start
-```
-
-## Technology Stack
-
-- **Frontend**: Next.js, React, TypeScript
-- **Styling**: Tailwind CSS
-- **UI Components**: Custom component library
-- **HTTP Client**: Axios
-- **State Management**: React Hooks
-
-## API Testing Features
-
-- Send HTTP requests (GET, POST, PUT, DELETE, PATCH)
-- Custom headers and authentication
-- Request/Response history
-- Collections and environments
-- Pre-request scripts and tests
-- Variable substitution
-- Mock server support
-- Import/Export capabilities
-
-## Documentation
-
-For detailed documentation, visit our [docs](https://apidemic.dev/docs).
-
-## Design
-
-Check out the [Figma Design](https://www.figma.com/design/tGvXUgUCwdEDcgTVgbA6fO/api-demic?node-id=0-1&t=Ozst4o0DOqOwtxnb-1).
-
-## Contributing
-
-We welcome contributions! Please read our contributing guidelines before submitting pull requests.
-
-## License
-
-MIT License - see LICENSE file for details
-
+## Status
+`In active development. Core agentic testing loop in progress. Status[🟡]`

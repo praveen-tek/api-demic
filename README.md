@@ -6,7 +6,7 @@
     <br />
     <a href="https://github.com/praveentek/apidemic/issues">Issues</a>
     ·
-    <a href="#">Docs</a>
+    <a href="https://github.com/praveentek/apidemic/docs/introduction.md">Docs</a>
     ·
     <a href="#">Changelog</a>
 </p>

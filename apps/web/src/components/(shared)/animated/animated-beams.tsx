@@ -111,21 +111,20 @@ export const AnimatedBeam = ({
 			resizeObserver.disconnect();
 		};
 	}, [
-		containerRef,
-		fromRef,
-		toRef,
-		curvature,
-		startXOffset,
-		startYOffset,
-		endXOffset,
-		endYOffset,
+		containerRef, 
+		fromRef, 
+		toRef, 
+		startXOffset, 
+		startYOffset, 
+		endXOffset, 
+		endYOffset
 	]);
 
 	return (
 		<svg
 			className={cn(
 				"pointer-events-none absolute top-0 left-0 transform-gpu stroke-2",
-				className
+				className,
 			)}
 			fill="none"
 			height={svgDimensions.height}

@@ -38,7 +38,8 @@ export function ToggleGroup({
 					? "gap-0.5"
 					: orientation === "horizontal"
 						? "*:not-first:border-s-0 *:not-last:border-e-0 *:not-first:not-data-[slot=separator]:before:inset-s-[-0.5px] *:not-last:not-data-[slot=separator]:before:inset-e-[-0.5px]"
-						: "flex-col *:not-first:border-t-0 *:not-last:border-b-0 *:not-first:not-data-[slot=separator]:before:top-[-0.5px] *:not-last:not-data-[slot=separator]:before:bottom-[-0.5px] *:data-[slot=toggle]:not-last:before:hidden dark:*:last:before:hidden dark:*:first:before:block", className,
+						: "flex-col *:not-first:border-t-0 *:not-last:border-b-0 *:not-first:not-data-[slot=separator]:before:top-[-0.5px] *:not-last:not-data-[slot=separator]:before:bottom-[-0.5px] *:data-[slot=toggle]:not-last:before:hidden dark:*:last:before:hidden dark:*:first:before:block",
+				className,
 			)}
 			data-size={size}
 			data-slot="toggle-group"

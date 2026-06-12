@@ -1,4 +1,4 @@
-![banner](README-banner.png)
+![banner](banner.png)
 
 <p align="center">
     Automated agentic <code>API testing</code> platform

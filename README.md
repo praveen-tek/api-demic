@@ -1,7 +1,7 @@
 ![banner](banner.png)
 
 <p align="center">
-    Automated agentic <code>API testing</code> platform
+    <code>Automated agentic API testing platform</code>
     <br />
     <br />
     <a href="https://github.com/praveentek/apidemic/issues">Issues</a>

@@ -27,8 +27,7 @@ export const changelog: ChangelogEntry[] = [
 		version: "v0.2",
 		date: "2025-Q3",
 		title: "REST Coverage Layer",
-		description:
-			"Automated endpoint coverage across REST APIs implemented.",
+		description: "Automated endpoint coverage across REST APIs implemented.",
 		status: "released",
 	},
 	{

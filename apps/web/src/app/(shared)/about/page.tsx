@@ -1,5 +1,5 @@
-import AboutPage from "@/components/(shared)/blocks/about-section";
 import React from "react";
+import AboutPage from "@/components/(shared)/blocks/about-section";
 
 const About = () => {
 	return <AboutPage />;

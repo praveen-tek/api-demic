@@ -72,9 +72,7 @@ export default function DevelopmentPage() {
 								key={item.label}
 								className="flex items-center gap-6 font-eightgon text-[12px]"
 							>
-								<span className="text-(--muted-dark) w-25">
-									{item.label}
-								</span>
+								<span className="text-(--muted-dark) w-25">{item.label}</span>
 								<span className="text-white/80">{item.value}</span>
 							</div>
 						))}

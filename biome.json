@@ -54,14 +54,7 @@
 			"!out/**",
 			"!build/**",
 			"!next-env.d.ts",
-			"!.next/**",
-			"!out/**",
-			"!build/**",
-			"!next-env.d.ts",
-			"!.next/**",
-			"!out/**",
-			"!build/**",
-			"!next-env.d.ts"
+			"!**/*.svg"
 		]
 	},
 	"javascript": {
@@ -279,6 +272,16 @@
 						"noVar": "error",
 						"noWith": "off",
 						"useGetterReturn": "off"
+					}
+				}
+			}
+		},
+		{
+			"includes": ["apps/desktop/**"],
+			"linter": {
+				"rules": {
+					"performance": {
+						"noImgElement": "off"
 					}
 				}
 			}

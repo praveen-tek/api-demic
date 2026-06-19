@@ -8,23 +8,23 @@ export type ChangelogEntry = {
 
 export const changelog: ChangelogEntry[] = [
 	{
-		version: "v0.2",
-		date: "2025-Q3",
-		title: "CI/CD Integration",
+		version: "v0.3",
+		date: "2025-Q1",
+		title: "Project Init",
 		description:
-			"Pipeline hooks for GitHub Actions, GitLab CI, and Bitbucket Pipelines.",
-		status: "planned",
+			"Repository initialized. Architecture and monorepo scaffolding complete.",
+		status: "released",
+	},
+	{
+		version: "v0.2",
+		date: "2025-Q1",
+		title: "Project Init",
+		description:
+			"Repository initialized. Architecture and monorepo scaffolding complete.",
+		status: "released",
 	},
 	{
 		version: "v0.1",
-		date: "2025-Q2",
-		title: "Agentic Test Loop",
-		description:
-			"Core agent loop that autonomously explores and validates REST endpoints.",
-		status: "in-progress",
-	},
-	{
-		version: "v0.0",
 		date: "2025-Q1",
 		title: "Project Init",
 		description:

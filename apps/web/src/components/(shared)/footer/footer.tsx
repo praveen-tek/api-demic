@@ -65,7 +65,7 @@ export default function FooterSection() {
 
 					<div className="flex flex-col gap-1">
 						<span className="font-eightgon text-[10px] text-(--muted-dark)">
-							apidemic — MIT License
+							apidemic — AGPLv3 Open Source
 						</span>
 						<span className="font-eightgon text-[10px] text-[var(--muted-dark)]">
 							© {new Date().getFullYear()} Automated agentic API testing

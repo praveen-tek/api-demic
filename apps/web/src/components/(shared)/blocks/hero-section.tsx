@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { changelog } from "@/app/(shared)/changelog/lib/changelog";
+import { changelog } from "@/lib/changelog/changelog";
 import { TextScramble } from "../animated/text-scramble";
 import FooterSection from "../footer/footer";
 import Navbar from "../navigation/navbar";

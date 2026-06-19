@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import LogoSmoke from "@/components/(shared)/animated/logo-smoke";
 
 export default function RootLayout({
 	children,
@@ -18,7 +17,6 @@ export default function RootLayout({
 					priority
 					className="object-cover object-center"
 				/>
-				{/* <LogoSmoke /> */}
 				<div className="absolute inset-0 bg-linear-to-r from-[#0a0a0a]/30 via-transparent to-transparent" />
 			</aside>
 		</div>

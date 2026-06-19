@@ -8,19 +8,27 @@ export type ChangelogEntry = {
 
 export const changelog: ChangelogEntry[] = [
 	{
-		version: "v0.3",
-		date: "2025-Q1",
-		title: "Project Init",
+		version: "v0.4",
+		date: "2026-Q2",
+		title: "Agentic Test Execution",
 		description:
-			"Repository initialized. Architecture and monorepo scaffolding complete.",
+			"Agent-driven test execution loop wired into core runner. Endpoint exploration logic in progress.",
+		status: "in-progress",
+	},
+	{
+		version: "v0.3",
+		date: "2025-Q4",
+		title: "Structured Reporting",
+		description:
+			"Test reporting pipeline added with structured, actionable output format.",
 		status: "released",
 	},
 	{
 		version: "v0.2",
-		date: "2025-Q1",
-		title: "Project Init",
+		date: "2025-Q3",
+		title: "REST Coverage Layer",
 		description:
-			"Repository initialized. Architecture and monorepo scaffolding complete.",
+			"Automated endpoint coverage across REST APIs implemented.",
 		status: "released",
 	},
 	{

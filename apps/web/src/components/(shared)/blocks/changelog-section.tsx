@@ -41,7 +41,7 @@ export default function ChangelogPage() {
 									{entry.status}
 								</span>
 							</div>
-							<p className="font-eightgon text-[12px] leading-[1.75] text-white/50 max-w-[480px]">
+							<p className="font-eightgon text-[12px] leading-[1.75] text-white/50 max-w-120">
 								{entry.description}
 							</p>
 						</div>

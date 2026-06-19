@@ -8,7 +8,7 @@ import {
 const faqs = [
 	{
 		q: "How is apidemic different from Postman or Insomnia?",
-		a: "Those tools require you to write and maintain test cases manually. apidemic drives testing autonomously — the agent decides what to test, generates the payloads, and interprets the results without your input.",
+		a: "Those tools require you to write and maintain test cases manually. apidemic drives testing autonomously the agent decides what to test, generates the payloads, and interprets the results without your input.",
 	},
 	{
 		q: "What API types does apidemic support?",
@@ -24,7 +24,7 @@ const faqs = [
 	},
 	{
 		q: "Is apidemic open source?",
-		a: "Yes — licensed under MIT. Contributions are welcome once the core loop ships.",
+		a: "Yes, licensed under AGPLv3. Contributions are welcome once the core loop ships.",
 	},
 ];
 

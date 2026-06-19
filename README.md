@@ -37,6 +37,6 @@ apidemic is an automated agentic API testing platform. Instead of manually writi
 
 ## License
 
-This project is licensed under the **[MIT License](https://opensource.org/licenses/MIT)**.
+This project is licensed under the **[AGPLv3 License](https://www.gnu.org/licenses/agpl-3.0.html)**.
 
 By using this software, you agree to the terms of the license.

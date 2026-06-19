@@ -1,5 +1,5 @@
-import Navbar from "@/components/(shared)/navigation/navbar";
 import FooterSection from "@/components/(shared)/footer/footer";
+import Navbar from "@/components/(shared)/navigation/navbar";
 
 const values = [
 	{
@@ -34,8 +34,8 @@ export default function AboutPage() {
 					<p className="font-eightgon text-[12px] leading-[1.75] text-white/50 max-w-[560px]">
 						apidemic is an automated agentic API testing platform. Instead of
 						manually writing test cases or configuring static test suites, it
-						uses an agent-driven approach to explore, validate, and stress
-						your API endpoints intelligently.
+						uses an agent-driven approach to explore, validate, and stress your
+						API endpoints intelligently.
 					</p>
 				</div>
 
@@ -72,7 +72,7 @@ export default function AboutPage() {
 					>
 						[ Get Started ]
 					</a>
-					
+
 					<a
 						href="https://github.com"
 						className="font-eightgon text-[10px] tracking-[0.15em] uppercase px-6 py-3 border border-border text-white/80 hover:text-blue-500 transition-colors"

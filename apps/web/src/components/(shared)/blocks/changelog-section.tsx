@@ -1,6 +1,6 @@
-import { changelog } from "@/lib/changelog/changelog";
 import FooterSection from "@/components/(shared)/footer/footer";
 import Navbar from "@/components/(shared)/navigation/navbar";
+import { changelog } from "@/lib/changelog/changelog";
 
 const statusStyles: Record<string, string> = {
 	released: "text-green-500",

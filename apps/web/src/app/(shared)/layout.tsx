@@ -1,6 +1,6 @@
-import LogoSmoke from "@/components/(shared)/animated/logo-smoke";
 import type { Metadata } from "next";
 import Image from "next/image";
+import LogoSmoke from "@/components/(shared)/animated/logo-smoke";
 
 export default function RootLayout({
 	children,

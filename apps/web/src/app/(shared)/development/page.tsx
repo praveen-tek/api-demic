@@ -1,5 +1,5 @@
-import Navbar from "@/components/(shared)/navigation/navbar";
 import FooterSection from "@/components/(shared)/footer/footer";
+import Navbar from "@/components/(shared)/navigation/navbar";
 
 const stack = [
 	{ label: "Frontend", value: "Next.js, Tailwind" },
@@ -40,9 +40,9 @@ export default function DevelopmentPage() {
 				<div className="py-8 border-t border-border">
 					<p className="font-eightgon text-[12px] leading-[1.75] text-white/50 max-w-[560px]">
 						apidemic is developed in the open. The source is available on
-						GitHub, contributions are welcome, and the project follows a
-						simple philosophy: agentic API testing should be accessible to
-						everyone, not locked behind a paywall.
+						GitHub, contributions are welcome, and the project follows a simple
+						philosophy: agentic API testing should be accessible to everyone,
+						not locked behind a paywall.
 					</p>
 				</div>
 
@@ -89,7 +89,7 @@ export default function DevelopmentPage() {
 					>
 						[ View on GitHub ]
 					</a>
-					
+
 					<a
 						href="/docs"
 						className="font-eightgon text-[10px] tracking-[0.15em] uppercase px-6 py-3 border border-border text-white/80 hover:text-blue-500 transition-colors"

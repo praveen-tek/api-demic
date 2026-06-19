@@ -1,0 +1,31 @@
+@font-face {
+	font-family: "Eightgon";
+	src: url("/fonts/eightgon/Eightgon-Regular.ttf") format("truetype");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Eightgon";
+	src: url("/fonts/eightgon/Eightgon-Italic.ttf") format("truetype");
+	font-weight: 400;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Type Light Sans";
+	src: url("/fonts/type-light-sans/TypeLightSans.ttf") format("truetype");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+.font-eightgon {
+	font-family: "Eightgon", sans-serif;
+}
+
+.font-type-light {
+	font-family: "Type Light Sans", sans-serif;
+}

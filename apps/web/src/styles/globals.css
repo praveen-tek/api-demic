@@ -1,6 +1,8 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
+@import "fumadocs-ui/css/neutral.css";
+@import "fumadocs-ui/css/preset.css";
 
 @custom-variant dark (&:is(.dark *));
 
@@ -236,4 +238,22 @@
 	html {
 		@apply font-mono;
 	}
+}
+
+* {
+	scrollbar-width: thin;
+	scrollbar-color: #ffffff #000000;
+}
+
+*::-webkit-scrollbar {
+	width: 3px;
+	height: 3px;
+}
+
+*::-webkit-scrollbar-track {
+	background: #000000;
+}
+
+*::-webkit-scrollbar-thumb {
+	background: #ffffff;
 }

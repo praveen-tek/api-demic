@@ -111,13 +111,13 @@ export const AnimatedBeam = ({
 			resizeObserver.disconnect();
 		};
 	}, [
-		containerRef, 
-		fromRef, 
-		toRef, 
-		startXOffset, 
-		startYOffset, 
-		endXOffset, 
-		endYOffset
+		containerRef,
+		fromRef,
+		toRef,
+		startXOffset,
+		startYOffset,
+		endXOffset,
+		endYOffset,
 	]);
 
 	return (
